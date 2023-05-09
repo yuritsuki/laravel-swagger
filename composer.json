@@ -1,5 +1,5 @@
 {
-  "name": "ronasit/laravel-swagger",
+  "name": "yuritsuki/laravel-swagger",
   "description": "Provided middleware for generating of swagger-documentation file by run testing of restful API.",
   "keywords": [
     "laravel",
@@ -26,7 +26,7 @@
   },
   "autoload": {
     "psr-4": {
-      "RonasIT\\Support\\AutoDoc\\": "src/"
+      "Yuritsuki\\Support\\AutoDoc\\": "src/"
     },
     "exclude-from-classmap": [
       "src/Tests/"
@@ -34,14 +34,14 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "RonasIT\\Support\\Tests\\": "tests/",
-      "RonasIT\\Support\\Tests\\Support\\": "tests/support/"
+      "Yuritsuki\\Support\\Tests\\": "tests/",
+      "Yuritsuki\\Support\\Tests\\Support\\": "tests/support/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "RonasIT\\Support\\AutoDoc\\AutoDocServiceProvider"
+        "Yuritsuki\\Support\\AutoDoc\\AutoDocServiceProvider"
       ]
     }
   }

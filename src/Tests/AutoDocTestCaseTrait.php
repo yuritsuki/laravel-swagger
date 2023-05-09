@@ -1,8 +1,8 @@
 <?php
 
-namespace RonasIT\Support\AutoDoc\Tests;
+namespace Yuritsuki\Support\AutoDoc\Tests;
 
-use RonasIT\Support\AutoDoc\Http\Middleware\AutoDocMiddleware;
+use Yuritsuki\Support\AutoDoc\Http\Middleware\AutoDocMiddleware;
 
 trait AutoDocTestCaseTrait
 {

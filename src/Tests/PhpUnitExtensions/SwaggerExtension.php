@@ -1,11 +1,11 @@
 <?php
 
-namespace RonasIT\Support\AutoDoc\Tests\PhpUnitExtensions;
+namespace Yuritsuki\Support\AutoDoc\Tests\PhpUnitExtensions;
 
 use PHPUnit\Runner\AfterLastTestHook;
 use Illuminate\Foundation\Application;
 use Illuminate\Contracts\Console\Kernel;
-use RonasIT\Support\AutoDoc\Services\SwaggerService;
+use Yuritsuki\Support\AutoDoc\Services\SwaggerService;
 
 /**
  * This interface, as well as the associated mechanism for extending PHPUnit,

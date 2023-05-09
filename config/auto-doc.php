@@ -1,8 +1,8 @@
 <?php
 
-use RonasIT\Support\AutoDoc\Drivers\LocalDriver;
-use RonasIT\Support\AutoDoc\Drivers\RemoteDriver;
-use RonasIT\Support\AutoDoc\Drivers\StorageDriver;
+use Yuritsuki\Support\AutoDoc\Drivers\LocalDriver;
+use Yuritsuki\Support\AutoDoc\Drivers\RemoteDriver;
+use Yuritsuki\Support\AutoDoc\Drivers\StorageDriver;
 
 return [
 
@@ -100,7 +100,7 @@ return [
     |
     | The name of driver, which will collect and save documentation
     | Feel free to use your own driver class which should be inherited from
-    | `RonasIT\Support\AutoDoc\Interfaces\SwaggerDriverInterface` interface,
+    | `Yuritsuki\Support\AutoDoc\Interfaces\SwaggerDriverInterface` interface,
     | or one of our drivers from the `drivers` config:
     */
     'driver' => env('SWAGGER_DRIVER', 'local'),

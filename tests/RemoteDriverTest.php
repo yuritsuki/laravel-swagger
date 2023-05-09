@@ -1,10 +1,10 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Yuritsuki\Support\Tests;
 
-use RonasIT\Support\AutoDoc\Drivers\RemoteDriver;
-use RonasIT\Support\AutoDoc\Exceptions\MissedRemoteDocumentationUrlException;
-use RonasIT\Support\Tests\Support\Traits\MockTrait;
+use Yuritsuki\Support\AutoDoc\Drivers\RemoteDriver;
+use Yuritsuki\Support\AutoDoc\Exceptions\MissedRemoteDocumentationUrlException;
+use Yuritsuki\Support\Tests\Support\Traits\MockTrait;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 class RemoteDriverTest extends TestCase

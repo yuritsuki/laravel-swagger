@@ -1,10 +1,10 @@
 <?php
 
-namespace RonasIT\Support\AutoDoc\Drivers;
+namespace Yuritsuki\Support\AutoDoc\Drivers;
 
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Facades\Storage;
-use RonasIT\Support\AutoDoc\Exceptions\MissedProductionFilePathException;
+use Yuritsuki\Support\AutoDoc\Exceptions\MissedProductionFilePathException;
 
 class StorageDriver extends BaseDriver
 {

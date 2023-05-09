@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Yuritsuki\Support\Tests;
 
 use Illuminate\Http\Response;
 

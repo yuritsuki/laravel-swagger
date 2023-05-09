@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\Tests\Support\Traits;
+namespace Yuritsuki\Support\Tests\Support\Traits;
 
 trait MockTrait
 {

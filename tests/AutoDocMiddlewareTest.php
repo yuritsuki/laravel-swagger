@@ -1,9 +1,9 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Yuritsuki\Support\Tests;
 
-use RonasIT\Support\AutoDoc\Http\Middleware\AutoDocMiddleware;
-use RonasIT\Support\Tests\Support\Traits\SwaggerServiceMockTrait;
+use Yuritsuki\Support\AutoDoc\Http\Middleware\AutoDocMiddleware;
+use Yuritsuki\Support\Tests\Support\Traits\SwaggerServiceMockTrait;
 
 class AutoDocMiddlewareTest extends TestCase
 {

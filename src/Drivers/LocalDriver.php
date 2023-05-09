@@ -1,9 +1,9 @@
 <?php
 
-namespace RonasIT\Support\AutoDoc\Drivers;
+namespace Yuritsuki\Support\AutoDoc\Drivers;
 
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
-use RonasIT\Support\AutoDoc\Exceptions\MissedProductionFilePathException;
+use Yuritsuki\Support\AutoDoc\Exceptions\MissedProductionFilePathException;
 
 class LocalDriver extends BaseDriver
 {

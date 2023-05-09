@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\AutoDoc\Interfaces;
+namespace Yuritsuki\Support\AutoDoc\Interfaces;
 
 interface SwaggerDriverInterface
 {

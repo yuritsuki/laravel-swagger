@@ -1,9 +1,9 @@
 <?php
 
-namespace RonasIT\Support\AutoDoc;
+namespace Yuritsuki\Support\AutoDoc;
 
 use Illuminate\Support\ServiceProvider;
-use RonasIT\Support\AutoDoc\Commands\PushDocumentationCommand;
+use Yuritsuki\Support\AutoDoc\Commands\PushDocumentationCommand;
 
 class AutoDocServiceProvider extends ServiceProvider
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Yuritsuki\Support\Tests;
 
-use RonasIT\Support\AutoDoc\Drivers\LocalDriver;
+use Yuritsuki\Support\AutoDoc\Drivers\LocalDriver;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
-use RonasIT\Support\AutoDoc\Exceptions\MissedProductionFilePathException;
+use Yuritsuki\Support\AutoDoc\Exceptions\MissedProductionFilePathException;
 
 class LocalDriverTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RonasIT\Support\AutoDoc\Services;
+namespace Yuritsuki\Support\AutoDoc\Services;
 
 use Illuminate\Container\Container;
 use Illuminate\Http\Request;
@@ -8,12 +8,12 @@ use Illuminate\Http\Testing\File;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use ReflectionClass;
-use RonasIT\Support\AutoDoc\Exceptions\InvalidDriverClassException;
-use RonasIT\Support\AutoDoc\Exceptions\LegacyConfigException;
-use RonasIT\Support\AutoDoc\Exceptions\SwaggerDriverClassNotFoundException;
-use RonasIT\Support\AutoDoc\Exceptions\WrongSecurityConfigException;
-use RonasIT\Support\AutoDoc\Interfaces\SwaggerDriverInterface;
-use RonasIT\Support\AutoDoc\Traits\GetDependenciesTrait;
+use Yuritsuki\Support\AutoDoc\Exceptions\InvalidDriverClassException;
+use Yuritsuki\Support\AutoDoc\Exceptions\LegacyConfigException;
+use Yuritsuki\Support\AutoDoc\Exceptions\SwaggerDriverClassNotFoundException;
+use Yuritsuki\Support\AutoDoc\Exceptions\WrongSecurityConfigException;
+use Yuritsuki\Support\AutoDoc\Interfaces\SwaggerDriverInterface;
+use Yuritsuki\Support\AutoDoc\Traits\GetDependenciesTrait;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -54,18 +54,17 @@ class SwaggerService
 
         $this->setDriver();
 
-        if (config('app.env') == 'testing') {
-            $this->container = $container;
 
-            $this->security = $this->config['security'];
+        $this->container = $container;
 
-            $this->data = $this->driver->getTmpData();
+        $this->security = $this->config['security'];
 
-            if (empty($this->data)) {
-                $this->data = $this->generateEmptyData();
+        $this->data = $this->driver->getTmpData();
 
-                $this->driver->saveTmpData($this->data);
-            }
+        if (empty($this->data)) {
+            $this->data = $this->generateEmptyData();
+
+            $this->driver->saveTmpData($this->data);
         }
     }
 

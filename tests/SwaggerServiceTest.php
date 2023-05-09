@@ -1,15 +1,15 @@
 <?php
 
-namespace RonasIT\Support\Tests;
+namespace Yuritsuki\Support\Tests;
 
 use Illuminate\Http\Testing\File;
-use RonasIT\Support\AutoDoc\Exceptions\InvalidDriverClassException;
-use RonasIT\Support\AutoDoc\Exceptions\LegacyConfigException;
-use RonasIT\Support\AutoDoc\Exceptions\SwaggerDriverClassNotFoundException;
-use RonasIT\Support\AutoDoc\Exceptions\WrongSecurityConfigException;
-use RonasIT\Support\AutoDoc\Services\SwaggerService;
-use RonasIT\Support\Tests\Support\Mock\TestNotificationSetting;
-use RonasIT\Support\Tests\Support\Traits\SwaggerServiceMockTrait;
+use Yuritsuki\Support\AutoDoc\Exceptions\InvalidDriverClassException;
+use Yuritsuki\Support\AutoDoc\Exceptions\LegacyConfigException;
+use Yuritsuki\Support\AutoDoc\Exceptions\SwaggerDriverClassNotFoundException;
+use Yuritsuki\Support\AutoDoc\Exceptions\WrongSecurityConfigException;
+use Yuritsuki\Support\AutoDoc\Services\SwaggerService;
+use Yuritsuki\Support\Tests\Support\Mock\TestNotificationSetting;
+use Yuritsuki\Support\Tests\Support\Traits\SwaggerServiceMockTrait;
 
 class SwaggerServiceTest extends TestCase
 {
